@@ -4,14 +4,33 @@
   <head>
     <style>
       button {
-        height: 20px;
-        width: 60px;
+        height: 30px;
+        width: 90px;
         outline: none;
       }
     </style>
   </head>
   <body>
-    <button id="changeColor">获取数据</button>
+    <table style="width:100%">
+      <thead>
+      <tr>
+        <th>数据名</th>
+        <th>数据</th>
+      </tr>
+      </thead>
+      <tbody id="debugTable">
+      </tbody>
+    </table>
+    <table style="width:100%">
+    <tr>
+      <th>
+        <button id="changeColor">获取数据</button>
+      </th>
+      <th>
+        <button id="getUrl">生成查询</button>
+      </th>
+    </table>
+
     <script src="popup.js"></script>
   </body>
 </html>
